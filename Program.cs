@@ -7,17 +7,12 @@ namespace HomeworkTemplate
     {
         static void Main(string[] args)
         {
-            Func<Task4, char[,]>TaskSolver = task =>
+            Func<Task5, Task5.Virus> TaskSolver = task =>
             {
-                // Your solution goes here
-                // You can get all needed inputs from task.[Property]
-                // Good luck!
-                char[,] board = task.Board;
-
-                return board;
+                Task5.Virus virus = new SuperVirus();
+                return virus;
             };
-
-            Task4.CheckSolver(TaskSolver);
+            Task5.CheckSolver(TaskSolver);
         }
     }
 }
